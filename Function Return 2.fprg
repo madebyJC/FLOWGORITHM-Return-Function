@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-06 09:20:37 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEyLTA2OzA5OjEyOjIyIHBtOzM0NzA="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEyLTA2OzA5OjIwOjM3IHBtOzE7MzU4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstInput, secondInput, sum, difference, product, quotient" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the first number: &quot;" newline="True"/>
+            <input variable="firstInput"/>
+            <output expression="&quot;Enter the second number: &quot;" newline="True"/>
+            <input variable="secondInput"/>
+            <output expression="&quot;First Number: &quot; &amp; numA(firstInput)" newline="True"/>
+            <output expression="&quot;Second Number: &quot; &amp; numB(secondInput)" newline="True"/>
+            <output expression="&quot;ARITHMETIC RESULT&quot;" newline="True"/>
+            <output expression="&quot;Addition Result: &quot; &amp; (numA(firstInput) + numB(secondInput))" newline="True"/>
+            <output expression="&quot;Subtraction Result: &quot; &amp; (numA(firstInput) - numB(secondInput))" newline="True"/>
+            <output expression="&quot;Multiplcation Result: &quot; &amp; (numA(firstInput) * numB(secondInput))" newline="True"/>
+            <output expression="&quot;Division Result: &quot; &amp; (numA(firstInput) / numB(secondInput))" newline="True"/>
+        </body>
+    </function>
+    <function name="numA" type="Integer" variable="first">
+        <parameters>
+            <parameter name="first" type="Integer" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+    <function name="numB" type="Integer" variable="second">
+        <parameters>
+            <parameter name="second" type="Integer" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+</flowgorithm>

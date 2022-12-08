@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-06 09:01:20 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEyLTA2OzA4OjQ5OjQ2IHBtOzM0ODU="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEyLTA2OzA5OjAxOjIwIHBtOzE7MzU3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop" type="Integer" array="False" size=""/>
+            <declare name="arrayInput" type="Integer" array="True" size="10"/>
+            <output expression="&quot;Enter ten numbers, simultaneously&quot;" newline="True"/>
+            <for variable="loop" start="0" end="9" direction="inc" step="1">
+                <input variable="arrayInput[loop]"/>
+            </for>
+            <output expression="&quot;Total sum of the given ten number is &quot; &amp; INPUT(arrayInput)" newline="True"/>
+        </body>
+    </function>
+    <function name="INPUT" type="Integer" variable="result">
+        <parameters>
+            <parameter name="numArray" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="loop, result" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="0"/>
+            <for variable="loop" start="0" end="9" direction="inc" step="1">
+                <assign variable="result" expression="result + numArray[loop]"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
